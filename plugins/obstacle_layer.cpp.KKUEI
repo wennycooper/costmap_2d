@@ -392,16 +392,6 @@ void ObstacleLayer::updateBounds(double robot_x, double robot_y, double robot_ya
     // copy cloud to last_cloud
     // delete costmap_tmp_
 
-    // Test by KKuei
-    /*
-    if (!rolling_window_) {
-        //unsigned int xx, yy;
-        //worldToMap(robot_x, robot_y - 2.0, xx, yy);
-        unsigned int index = getIndex(266, 236);
-        printf("costmap_[%d,%d] = %d", 266, 236, costmap_[index]);
-
-    }
-    */
     
     unsigned char* costmap_tmp_ = new unsigned char[getSizeInCellsX() * getSizeInCellsY()];
 
